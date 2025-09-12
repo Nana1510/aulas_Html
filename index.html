@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil - Dino da Silva Sauro</title>
-    <link rel="stylesheet " href = "style.css">
+    <title>Perfil -Draculaura Dracul</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Cabeçalho-->
@@ -13,20 +13,20 @@
         <h2>Estudante do Técnico em Desenvolvimento de Sistemas</h2>
         <a href="#sobre-mim">Sobre mim</a>
         <a href="#objetivos">Meus objetivos</a>
-        <a href</a>
-        <a href="#contato">Co="#competências">Competências</a>
-        <a href="#cursos">Meus cursosntato</a>
+        <a href="#competências">Competências</a>
+        <a href="#cursos">Meus cursos</a>
+        <a href="#contato">Contato</a>
     </header>
 
     <!-- Informações Pessoais-->
     <section id="sobre-mim">
         <h3>Sobre Mim</h3>
-        <p>Nome: Draculaura Dracul </p>
+        <p>Nome: Draculaura Dracul</p>
         <p>Idade: 1600</p>
         <p>Período: 3º ano</p>
         <p>Instituição: Colégio Estadual Profa. Dirce Celestino do Amaral</p>
         <video width="500" height="400" controls>
-            <source src="./videos/video.mp4" type="video/mp4">
+            <source src="./videos/Conheça a Draculaura ｜ Monster High ｜ Cartoon Network.mp4" type="video/mp4">
         </video>
     </section>
 
@@ -39,53 +39,93 @@
             <li>Criar projetos reais</li>
         </ul>
     </section>
-
-    <section id="competências">
-        <h3>Minhas competências</h3>
-        <ol>
-            <li>Comunicação e liderança</li>
-            <li>Design de Moda</li>
-            <li>Sei virar morcego</li>
-        </ol>
-        <img src="./imagens/Drac rosto.jpg" alt="Meu rosto" width="300" height="300">
+    
+    <!--Competencias-->
+    <section id="competencias">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Competências</th>
+                    <th>Nível</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!--Primeira linha-->
+                    <td>Design de Moda</td>
+                    <td>Intermediário</td>
+                    <td>Aprendido</td>
+                </tr>
+                <tr> <!--Primeira linha-->
+                    <td>Maquiagem</td>
+                    <td>Básico</td>
+                    <td>Em andamento</td>
+                </tr>
+                <tr> <!--Primeira linha-->
+                    <td>Artes</td>
+                    <td>Básico</td>
+                    <td>Pendente</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
+    <!--Cursos-->
     <section id="cursos">
-        <h3>Meus cursos</h3>
-        <dl>
-            <dt>Workshop de ACessórios criativos</dt>
-             <dd>Maquiagem</dd>
-
-            <dt>Costura Avançada</dt>
-             <dd>Design</dd>
-        </dl>
-        <img src="./imagens/costureira.jpg" alt="Dino Sauro cozinhando comida de alto nivel" width="350" height="500">
+        <table border="1"> <!--Cria tabela-->
+            <thead> <!--Cabeçalho da tabela-->
+                <tr> <!--Linha da tabela-->
+                    <th>Curso</th>
+                    <th>Carga horária</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!--Primeira linha-->
+                    <td>Design</td>
+                    <td>40h</td>
+                    <td>Em andamento</td>
+                </tr>
+                <tr> <!--Segunda linha-->
+                    <td>Alta Costura</td>
+                    <td>60h</td>
+                    <td>Concluido</td>
+                <tr> <!--Terceira linha-->
+                    <td>Artes PLásticas</td>
+                    <td>30h</td>
+                    <td>Pendentes</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id = "Formulario-Contato">
-        <h3>Entre em Contato</h3>
-        <form action="#" method = "post"></form>
-        <label for= "nome">Nome:</label><br>
-        <input type="text" id="nome" name = "nome" placeholder="Insira seu nome completo"><br><br>
-        <label for= "email">Email</label><br>
-        <input type = "email" id= "email" name = "email" placeholder="Exemplo@site.com" required><br><br>
+    <section id="formulário-contato">
+        <h3>Entre em contato</h3>
+        <form action="#" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Insira seu nome completo" required><br><br>
+        <label for="aniversario">Data de aniversário:</label><br>
+        <input type="date" id="aniversario" name="aniversario" required><br><br>
+        <label for="cidade">Cidade/UF:</label><br>
+        <input type="text" id="cidade" name="cidade" placeholder="Cidade/UF" required><br><br>
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required><br><br>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="exemplo@site.com" required><br><br>
         <label for="assunto">Assunto:</label><br>
-        <input type="text" id="assunto" placeholder = "Insira o assunto" name="assunto"><br><br>
-        <label for="Mensagem">Mensagem:</label><br>
-        <textarea id ="Mensagem" name = "Mensagem" placeholder="Insira sua mensagem" rows= "5"></textarea><br><br>
-        <label for= "telefone">Telefone:</label><br>
-        <input type = "telefone" id="telefone" name="telefone" placeholder="Ex(41 99587 8727)"></label><br><br>
-       
-        <button type ="submit">Enviar</button>
-        <button type ="reset">Limpar</button>
-    </form>
+        <input type="text" id="assunto" name="assunto" placeholder="Insira seu assunto"><br><br>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" placeholder="Insira sua mensagem" row="5"></textarea><br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        </form>
     </section>
 
-    <!-- Contato -->
+     <!-- Contato -->
     <footer id="contato">
         <h3>Contato</h3>
-        <p>E-mail: <a href="mailto:dino.sauro@escola.pr.gov.br">dino.sauro@escola.pr.gov.br</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/helcio-padilha/" target="_blank">Dino da Silva Sauro</a></p>
+        <p>E-mail: <a href="mailto:dracu.laura@escola.pr.gov.br">dracu.laura@escola.pr.gov.br</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/helcio-padilha/" target="_blank">Draculaura Dracul</a></p>
     </footer>
 </body>
 </html>

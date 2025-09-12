@@ -8,7 +8,7 @@
     --cor-fundo: #ff9cc2;
     --cor-texto: #222;
     --cor-primaria: #270216;
-    --cor-secundaria: #ff4d74;
+    --cor-secundaria: #EA088D;
     --cor-borda: #d9e2ef;
 }
 
@@ -40,13 +40,31 @@ header {
     background: #ffa5c8;
 }
 
-a {
-    color: var(--cor-primaria);
-    text-decoration: none;
-    }
-    
-    a:hover {
-    color: var(--cor-secundaria);
-    text-decoration: underline;
-    font-weight: bold;
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:16px;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    background-color: #EA088D;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #d9e2ef;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #d9e2ef;
+    text-align: center;
+}
+
+tbody tr:hover{
+    background-color: #520230;
+}
+
+tbody tr:nth-child(even){
+    background-color: #EA088D;
+}
