@@ -5,7 +5,7 @@
 }
 
 :root {
-    --cor-fundo: #ff9cc2;
+    --cor-fundo: #ff7bae;
     --cor-texto: #222;
     --cor-primaria: #270216;
     --cor-secundaria: #EA088D;
@@ -37,8 +37,19 @@ header {
     box-shadow: 0 4px 8px rgb(44, 0, 31);
     border-radius: 18px;
     transition: background 0.2s ease, color 0.2s ease;
-    background: #ffa5c8;
+    background: #ff65a086;
 }
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    }
+    
+    a:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+    font-weight: bold;
+    } 
 
 table {
     width: 100%;
@@ -62,7 +73,7 @@ td {
 }
 
 tbody tr:hover{
-    background-color: #520230;
+    background-color: #e973b6;
 }
 
 tbody tr:nth-child(even){
