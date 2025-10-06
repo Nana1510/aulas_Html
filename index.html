@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil -Draculaura Dracul</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <!-- Cabeçalho-->
@@ -127,5 +128,12 @@
         <p>E-mail: <a href="mailto:dracu.laura@escola.pr.gov.br">dracu.laura@escola.pr.gov.br</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/helcio-padilha/" target="_blank">Draculaura Dracul</a></p>
     </footer>
+    <script>
+        if("ServiceWorker" in navigator) {
+            navigator.serviceWorker("service-worker.js")
+            .then(() => console.log("Sw registrado com sucesso"))
+            .catch(err => console.error("Erro ao registrar Sw", err))
+        }
+    </script>
 </body>
 </html>
